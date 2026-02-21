@@ -6,4 +6,4 @@ jobs:
     actions:
       - name: Checking out the contents
         uses: actions/checkout@v4
-      - run: echo "$(cat abc.xyz)"
+      - run: echo "$(cat myfile.txt)"
