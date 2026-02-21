@@ -3,7 +3,7 @@ on: push
 jobs:
   general-job:
     runs-on: ubuntu-latest
-    actions:
+    steps:
       - name: Checking out the contents
         uses: actions/checkout@v4
-        run: echo "$(cat myfile.txt)"
+      - run: echo "$(cat myfile.txt)"
